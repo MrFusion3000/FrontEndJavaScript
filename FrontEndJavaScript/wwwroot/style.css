@@ -1,0 +1,14 @@
+.bat {
+    text-align:center;
+    font-size: 48px;
+    font-weight: bold; 
+    font-family:'Langar', cursive;
+    white-space: pre-wrap;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.xmas {
+    text-align: center;
+    text-decoration-color: red;
+    font-family: 'Langar', cursive;
+}

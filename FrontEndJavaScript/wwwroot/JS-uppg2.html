@@ -1,0 +1,62 @@
+
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Guessing Game 2000</title>  
+        
+    </head> 
+      
+    <body> 
+    <h1>---=== Guess The Number! ===---</h1> 
+      
+    <p>Guess the random number between 1 - 10.</p> 
+      
+    <div class="form"> 
+        <label for="guessNumber">Enter a number (1-10): </label> 
+        <input type = "text" id = "guessNumber" class = "guessNumber"> 
+        <input type = "submit" value = "Submit" 
+               class = "Submit" id = "submit"> 
+    </div> 
+    <br><br>
+    <h2><span id="message"></span></h2>
+      
+    <script type = "text/javascript"> 
+      
+        // random value generated 
+        var y = Math.floor(Math.random() * 10 + 1); 
+          
+        // counting the number of guesses made for correct guess 
+        var guess = 1; 
+          
+        document.getElementById("submit").onclick = function(){ 
+          
+       // number guessed by user      
+       var x = document.getElementById("guessNumber").value;     
+
+       if(x == y) 
+       {     
+           //alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+           //        + guess + " GUESS "); 
+                   message.textContent = ("GOOD WORK!!! YOU GUESSED IT RIGHT IN "
+                   + guess + " GUESSES ");
+                   message.style.color = "green";
+       } 
+       else if(x > y) /* if guessed number is greater 
+                       than actual number*/ 
+       {     
+           guess++; 
+           //alert("No Can Do!! Try A Smaller Number!"); 
+           message.textContent = ("No Can Do!! Try A Smaller Number!");
+           message.style.color = "red";
+       } 
+       else
+       { 
+           guess++; 
+           //alert("Nope!! Try A BIgger Number") 
+           message.textContent = ("No Can Doodle!! Try A Bigger Number!");
+           message.style.color = "cyan";
+       } 
+    } 
+    </script> 
+    </body> 
+    </html>          
