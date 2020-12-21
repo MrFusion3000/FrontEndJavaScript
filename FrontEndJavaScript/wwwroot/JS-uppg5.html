@@ -30,10 +30,10 @@
 <script type="text/javascript">
     document.getElementById("submit").onclick = function () {   
 
-        var noToCheck1 = document.getElementById("tal1").value;
-        var noToCheck2 = document.getElementById("tal2").value;
+        let noToCheck1 = document.getElementById("tal1").value;
+        let noToCheck2 = document.getElementById("tal2").value;
 
-        if (isNaN(noToCheck1) || isNaN(noToCheck2) || document.getElementById("tal1").value === document.getElementById("tal2").value) {
+        if (isNaN(noToCheck1) || isNaN(noToCheck2) || noToCheck1 === noToCheck2) {
             error.textContent = "Invalid input";
         }
         else
