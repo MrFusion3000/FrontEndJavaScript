@@ -27,11 +27,11 @@
 <script type="text/javascript">
     document.getElementById("submit").onclick = function () {
 
-        var x = document.getElementById("montyfi").value; 
-    
+        var x = document.getElementById("montyfi").value;
+
         if (x === null || x === undefined || x.substring(0, 2) === 'Py') {
             monty.textContent = x;
-        }        
+        }
         monty.textContent = "Py" + x;
     }
 </script>

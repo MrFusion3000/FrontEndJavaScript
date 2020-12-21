@@ -6,9 +6,11 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\JS-uppg4.html" />
+    <Content Remove="wwwroot\JS-uppg5.html" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\JS-uppg5.html" />
     <None Include="wwwroot\JS-uppg4.html" />
     <None Include="wwwroot\JS-uppg3.html" />
   </ItemGroup>
